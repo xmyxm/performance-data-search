@@ -1,0 +1,12 @@
+{
+  "name": "performance-data-search",
+	"version": "0.1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "exp"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
