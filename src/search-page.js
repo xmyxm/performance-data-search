@@ -63,11 +63,6 @@ const pageConfigList = [
         pageId: '9935418'
     },
     {
-        name: '好友来过列表页',
-        path: 'packages/friends/pages/shopcome/index',
-        pageId: '11519'
-    },
-    {
         name: '个人中心',
         path: '/pages/my/my',
         pageId: '11413'
@@ -107,12 +102,17 @@ const pageConfigList = [
         path: 'packages/user/pages/card/card',
         pageId: '11476'
     },
+    {
+        name: '好友来过列表页',
+        path: 'packages/friends/pages/shopcome/index',
+        pageId: '11519'
+    },
 ]
 
 // 1737362760000
 // 1737364560000
-const startTime = (new Date('2025-02-10')).getTime()
-const endTime = (new Date('2025-02-12')).getTime()
+const startTime = (new Date('2025-02-12 00:00:00')).getTime()
+const endTime = (new Date('2025-02-12 23:59:59')).getTime()
 
 Promise.all(pageConfigList.map(({ name, path, pageId }) => {
     const projectId = 2621
